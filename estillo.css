@@ -1,0 +1,1313 @@
+@font-face {
+    font-family: Lemonmilk;
+    src: url(./font/LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: Myriam;
+    src: url(./font/Myriad.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+/* NAV */
+
+
+
+.senlelogo img {
+    width: 50px;
+    transition: all 0.3s;
+}
+
+.senlelogo img:hover {
+    transform: scale(1.2);
+
+}
+
+
+#menu {
+    background-color: #005158;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10%;
+    height: 5em;
+    padding-top: 1em;
+    position: relative;
+
+
+}
+
+.menulista {
+    display: flex;
+    text-align: center;
+
+}
+
+
+.menulista a {
+    display: block;
+    width: 200px;
+    background-color: #005158;
+    color: white;
+    padding: 10px 0;
+    font-family: Myriam;
+
+}
+
+
+
+.menulista a:hover {
+    color: #f1860b;
+    border-radius: 20px;
+}
+
+
+.submenuacerca {
+    display: none;
+
+}
+
+.submenuacerca a {
+    color: rgb(255, 255, 255);
+}
+
+.submenuacerca a:hover {
+    background-color: #f1860b;
+    color: white;
+}
+
+.menulista li:nth-child(2):hover .submenuacerca {
+    display: block;
+}
+
+.menulista li:nth-child(1):hover .submenuacerca {
+    display: block;
+}
+
+.menulista li:nth-child(3):hover .submenuacerca {
+    display: block;
+}
+
+.menulista li:nth-child(4):hover .submenuacerca {
+    display: block;
+}
+
+
+.videogif {
+    display: none;
+
+}
+
+
+.videogif a {
+    color: rgb(255, 255, 255);
+}
+
+.videogif a:hover {
+    background-color: #f1860b;
+    color: white;
+}
+
+
+
+.submenuacerca li:nth-child(1):hover .videogif {
+    display: block;
+}
+
+.submenuacerca li:nth-child(2):hover .videogif {
+    display: block;
+}
+
+
+.submenuacerca li:nth-child(3):hover .videogif {
+    display: block;
+}
+
+.submenuacerca li:nth-child(4):hover .videogif {
+    display: block;
+}
+
+.submenuacerca li:nth-child(5):hover .videogif {
+    display: block;
+}
+
+.submenuacerca li:nth-child(6):hover .videogif {
+    display: block;
+}
+
+.gif {
+    width: 200px;
+    height: 200px;
+
+
+}
+
+
+
+.btn button {
+    color: white;
+    padding: 9px 25px;
+    background-color: #f1860b;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    font-family: Myriam;
+
+
+}
+
+
+.btn button:hover {
+
+    background-color: #aa5e08;
+    transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* BANNERINICIO */
+
+
+.bannerfoto img {
+    width: 700px;
+    border-radius: 70px;
+    object-fit: cover;
+
+
+}
+
+#banner {
+    height: calc(100vh - 5em);
+    display: flex;
+    padding-left: 5em;
+    border: solid red 2px;
+
+}
+
+
+.bannertexto {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.bannertexto h1 {
+    font-family: Lemonmilk;
+    width: 90%;
+    font-size: 4em;
+    padding-bottom: 1em;
+    color: #f1860b;
+}
+
+
+
+
+.bannertexto p {
+    font-family: Myriam;
+    font-size: 1.5em;
+    width: 90%;
+}
+
+
+
+.slider-box {
+    width: 40%;
+    height: auto;
+    margin: 50px auto 0;
+border: solid red 2px;
+    overflow: hidden;
+
+}
+
+.slider-box ul {
+    display: flex;
+    margin-top: 10em;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+
+}
+
+.slider-box li {
+    width: 100%;
+    position: relative;
+    list-style: none;
+}
+
+
+
+.slider-box img {
+    width: 100%;
+    border-radius: 50px;
+    border: solid red 2px;
+}
+
+
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+
+
+/* PIE */
+.piesenlelogo img {
+    width: 50px;
+    transition: all 0.3s;
+}
+
+.piesenlelogo img:hover {
+    transform: scale(1.2);
+
+}
+
+.piemenu li:hover {
+    transform: scale(1.1);
+}
+
+
+.piemenu a {
+    color: white;
+    font-size: 700;
+    font-family: Myriam;
+}
+
+.piemenu a:hover {
+    color: #f1860b;
+    font-size: 700;
+}
+
+.piemenu li {
+    display: inline-block;
+    padding: 0 20px;
+    /* border: solid red 2px;
+ */
+}
+
+.piemenu li:hover {
+    transform: scale(1.1);
+}
+
+
+
+.pie {
+    height: 5em;
+    background-color: #005158;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10%;
+
+}
+
+
+.leypie {
+    background-color: #005158;
+    text-align: center;
+
+}
+
+.leypie p {
+    font-family: Myriam;
+    color: white;
+}
+
+
+.fa-brands {
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.fa-brands:hover {
+    color: #f1860b;
+}
+
+
+
+
+
+
+
+
+
+
+/* ACERCADENOSOTROSBANNER */
+
+
+
+#acercabanner {
+
+    height: 400px;
+    background-image: url(img/banneracerca.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(9, 255, 0) 2px;
+
+}
+
+
+#acercabanner h1 {
+    font-family: Lemonmilk;
+    font-size: 6em;
+    color: white;
+
+}
+
+/* ACERCADENOSOTROSNUESTRAHISTORIA */
+
+#nustrahistoria {
+    display: flex;
+    height: 600px;
+    border: solid red 2px;
+    align-items: center;
+    padding: 0 15em 0;
+}
+
+.img-texto-nustrahistoria img {
+    width: 350px;
+
+}
+
+
+.texto-nustrahistoria h1 {
+    font-family: Lemonmilk;
+    font-size: 4em;
+}
+
+
+.texto-nustrahistoria p {
+    font-family: Myriam;
+    padding-top: 2em;
+    width: 70%;
+    font-size: 1.5em;
+    text-align: justify;
+
+}
+
+
+.manologo {
+    background-color: #005158;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1em;
+    margin-left: 20em;
+}
+
+
+
+
+
+
+/* ACERCADENOSOTROSQUIENENESSOMOS */
+
+#quienessomos {
+    display: flex;
+    height: 600px;
+    border: solid red 2px;
+    align-items: center;
+    padding: 0 15em 0;
+    justify-content: space-around;
+}
+
+
+
+#quienessomos h1 {
+    font-family: Lemonmilk;
+    font-size: 4em;
+}
+
+
+
+/* ACERCADENOSOTROSMISION */
+
+
+#mision {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    padding: 0 15em 0;
+    border: solid rgb(38, 0, 255) 2px;
+}
+
+
+
+
+.img-mision img {
+    width: 350px;
+
+}
+
+
+.text-mision h1 {
+    font-family: Lemonmilk;
+    font-size: 4em;
+
+}
+
+
+
+.text-mision p {
+
+    font-family: Myriam;
+    padding-top: 2em;
+    font-size: 1.5em;
+    text-align: justify;
+    width: 70%;
+}
+
+.manologo1 {
+    background-color: #f1860b;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4em;
+    margin-left: 41em;
+}
+
+
+
+/* ACERCADENOSOTROSVISION */
+
+
+#vision {
+    display: flex;
+    height: 600px;
+    border: solid rgb(0, 255, 76) 2px;
+    align-items: center;
+    padding: 0 15em 0;
+
+}
+
+.img-vision {
+    padding-right: 15em;
+}
+
+.img-vision img {
+    width: 350px;
+
+}
+
+
+
+.text-vision h1 {
+    font-family: Lemonmilk;
+    font-size: 4em;
+
+}
+
+.text-vision p {
+    font-family: Myriam;
+    padding-top: 2em;
+    text-align: justify;
+    font-size: 1.5em;
+
+}
+
+
+
+.manologo2 {
+    background-color: #005158;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1em;
+    margin-left: 35em;
+}
+
+/* ACERCADENOSOTROSOBJETIVO */
+
+#objetivo {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    padding: 0 15em 0;
+    border: solid red 2px;
+
+}
+
+
+.img-objetivo img {
+    width: 350px;
+
+}
+
+.text-objetivo h1 {
+    font-family: Lemonmilk;
+    font-size: 4em;
+
+}
+
+.text-objetivo p {
+    font-family: Myriam;
+    padding-top: 2em;
+    width: 70%;
+    text-align: justify;
+    font-size: 1.5em;
+
+}
+
+.manologo3 {
+    background-color: #f1860b;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1em;
+    margin-left: 20em;
+}
+
+
+
+
+
+/* ACERCADENOSOTROSEQUIPO */
+
+
+#equipo {
+    padding: 0 15em 0;
+}
+
+
+.equipotexto h1 {
+    font-family: Lemonmilk;
+    padding-top: 2em;
+    font-size: 4em;
+    text-align: center;
+}
+
+.grupo {
+    padding-top: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6em;
+}
+
+
+.grupo h1 {
+    font-family: Lemonmilk;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.grupo p {
+    color: white;
+    font-family: Myriam;
+    padding: 2em;
+    text-align: justify;
+
+}
+
+
+
+
+.avatar {
+    width: 120px;
+
+    display: flex;
+    margin-top: -4em;
+    margin-left: 5em;
+
+}
+
+
+
+.mano1 {
+    background-color: #005158;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7em;
+    margin-top: 2em;
+}
+
+
+.mano2 {
+    background-color: #f1860b;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7em;
+    margin-top: 3.1em;
+}
+
+.mano3 {
+    background-color: #005158;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7em;
+    margin-top: -0.5em;
+}
+
+.mano4 {
+    background-color: #f1860b;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7em;
+    margin-top: 2em;
+}
+
+.mano5 {
+    background-color: #005158;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7em;
+    margin-top: 6.7em;
+}
+
+.mano6 {
+    background-color: #f1860b;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7em;
+    margin-top: 4.3em;
+}
+
+.fa-solid {
+    font-size: 2.5em;
+}
+
+
+
+
+.Aleja {
+    background-color: #f1860b;
+    width: 300px;
+    height: 400px;
+
+    border-radius: 70px;
+}
+
+.Tat {
+    background-color: #005158;
+    width: 300px;
+    height: 400px;
+
+    border-radius: 70px;
+}
+
+.Day {
+    background-color: #f1860b;
+    width: 300px;
+    height: 400px;
+
+    border-radius: 70px;
+}
+
+.Dan {
+    background-color: #005158;
+    width: 300px;
+    height: 400px;
+
+    border-radius: 70px;
+}
+
+.Sebas {
+    background-color: #f1860b;
+    width: 300px;
+    height: 400px;
+
+    border-radius: 70px;
+}
+
+.Brian {
+    background-color: #005158;
+    width: 300px;
+    height: 400px;
+
+    border-radius: 70px;
+}
+
+
+
+
+/* SERVICIO */
+
+
+
+
+#SERVICIO {
+    display: flex;
+    height: 700px;
+    align-items: center;
+    padding: 0 15em 0;
+   
+
+}
+
+
+
+
+.text-servicio h1 {
+    font-family: Lemonmilk;
+    font-size: 4em;
+    width: 90%;
+
+}
+
+.text-servicio h6 {
+    font-family: Lemonmilk;
+    padding-top: 1em;
+    font-size: 2em;
+    width: 90%;
+
+
+}
+
+
+
+.text-servicio p {
+    padding-top: 2em;
+    width: 90%;
+    font-size: 1.5em;
+    font-family: Myriam;
+
+
+}
+
+
+#section-elementos {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid #f1860b 4px;
+    height: 100vh;
+    width: 95%;
+    align-content: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em;
+    border-radius: 50px;
+
+}
+
+.img-servicio img {
+    width: 580px;
+    filter: drop-shadow(4px 6px 12px #f1860b);
+    border-radius: 50px;
+
+}
+
+
+
+.elemento-servicio {
+    filter: drop-shadow(4px 6px 12px black);
+    display: flex;
+    width: 45%;
+    height: 250px;
+
+
+
+
+}
+
+
+.img-servicio-todo img {
+    width: 300px;
+    height: 247px;
+    border-radius: 50px 0 0 50px;
+
+}
+
+
+.texto-servicio-todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #005158;
+
+    border-radius: 0 50px 50px 0px;
+}
+
+.texto-servicio-todo p {
+    font-size: 15px;
+    color: white;
+    font-family: Myriam;
+    width: 80%;
+}
+
+.texto-servicio-todo h5 {
+    width: 80%;
+    font-family: Lemonmilk;
+    color: white;
+    font-size: 1.1em;
+}
+
+
+.texto-servicio-todo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1860b;
+    padding-left: 2em;
+    border-radius: 0 50px 50px 0px;
+}
+
+.texto-servicio-todo1 p {
+    font-size: 15px;
+    color: white;
+    font-family: Myriam;
+    width: 90%;
+}
+
+.texto-servicio-todo1 h5 {
+    font-family: Lemonmilk;
+    color: white;
+    width: 90%;
+    font-size: 1.1em;
+}
+
+
+
+.btn-plata1 {
+    color: white;
+    padding: 9px 25px;
+    background-color: #005158;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-plata1:hover {
+
+    background-color: #00373b;
+    transform: scale(1.1);
+
+
+}
+
+
+.btn-plata {
+    color: white;
+    padding: 9px 25px;
+    background-color: #f1860b;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-plata:hover {
+
+    background-color: #aa5e08;
+    transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+/* LENGUADESEÑAS */
+
+
+
+#lenguadeseñas {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+#lenguadeseñas h1 {
+    font-family: Lemonmilk;
+    text-align: center;
+    padding-bottom: 0.5em;
+    color: #005158;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 4em;
+}
+
+
+#lenguadeseñas ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3em;
+
+    height: 75px;
+}
+
+
+#lenguadeseñas li {
+    font-family: Myriam;
+    background-color: #005158;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+#lenguadeseñas ul a {
+    font-family: Myriam;
+    color: white;
+    font-size: 20px;
+}
+
+#lenguadeseñas ul a:hover {
+    color: #f1860b;
+}
+
+
+.porfoliogif {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+
+
+}
+
+.porfoliogif img {
+    width: 100%;
+
+}
+
+
+
+.porfoliogif .vocabulario {
+    box-shadow: 0 5px 10px rgba(0, 81, 88, 3);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+
+
+.porfoliogif .btn {
+    background-color: #f1860b;
+    color: aliceblue;
+    border-radius: 17px;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+.porfoliogif .vocabulario:hover {
+    box-shadow: 0 5px 10px rgba(241, 134, 13, 3);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/* CONTACTO */
+
+#contacto {
+    background-image: url(img/azulfoto.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+
+
+
+.enviar {
+    display: flex;
+    flex-direction: row;
+}
+
+.logocontacto {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.escribe h1 {
+    font-size: 4em;
+    padding-bottom: 16px;
+    color: white;
+    font-family: Lemonmilk;
+}
+
+.escribe p {
+    font-family: Myriam;
+    font-size: 25px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.escribe .fa-brands {
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+
+input,
+textarea {
+    background-color: #ffffff5b;
+    padding: 20px 10px;
+    margin-bottom: 55px;
+    margin-right: 35px;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+
+::placeholder {
+    font-family: Myriam;
+    color: white;
+}
+
+
+.btnenviar button {
+    color: white;
+    padding: 9px 45px;
+    background-color: #00373b;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    font-family: Myriam;
+
+}
+
+.infocontacto {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:#00373b;
+    padding-left: 4em;
+    align-self: center;
+    margin-left: 29em;
+    position: absolute;
+    filter: drop-shadow(4px 6px 12px black);
+
+
+
+}
+
+.infocontacto .fa-solid {
+    font-size: 2em;
+    color: white;
+}
+
+
+.ubi {
+    display: flex;
+    gap: 10px;
+
+}
+
+.ubi p {
+    font-family: Myriam;
+    color: white;
+}
+
+.email {
+    display: flex;
+    gap: 10px;
+}
+
+.email p {
+    font-family: Myriam;
+    color: white;
+}
+
+
+.tel {
+    display: flex;
+    gap: 10px;
+}
+
+.tel p {
+    font-family: Myriam;
+    color: white;
+}
+
+
+
+.btnenviar button:hover {
+
+    background-color: #aa5e08;
+    transform: scale(1.1);
+
+
+}
+
+
+.general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+   
+    width: 600px;
+    height: 70%;
+    background-color: #f1860b;
+    margin-left: 48em;
+   
+   
+    
+}
+
+
+.cont h1{
+    color: white;
+    font-size: 2em;
+    font-family: Lemonmilk;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+/* nav */
+    .menulista {
+        padding-right:3em ;
+    
+    }
+/* banner */
+    .bannertexto h1 {
+       border: solid red 2px;
+        font-size: 2em;
+      
+    }
+
+    .bannertexto p {
+        
+        font-size: 1em;
+       
+    }
+    
+
+    .slider-box{
+        margin-top: 8em;
+    }
+ 
+   /* Aerca de nosotros */
+
+   #acercabanner h1{
+    font-size: 4em;
+   }
+
+
+   #nustrahistoria {
+ align-items: center;
+    padding: 0 5em 0;
+}
+
+
+
+   .texto-nustrahistoria h1 {
+    font-size: 2em;
+}
+
+
+
+.texto-nustrahistoria p {
+    
+    padding-top: 1em;
+    width: 90%;
+    font-size: 1em;
+   
+
+}
+
+}
